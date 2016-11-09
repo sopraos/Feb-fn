@@ -1,0 +1,80 @@
+/* ==|====================
+   Documentation
+   ======================= */
+
+//__ CODE
+
+code,
+kbd,
+pre,
+samp {
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code {
+}
+.docs-code-live {
+  margin-bottom: 16px;
+}
+
+
+//____
+
+body {
+  background: $body-bg;
+  color: $body-color;
+}
+
+.docs-page-title {}
+.docs-heading {}
+
+.header-docs {
+  .menu-docs {}
+}
+
+
+
+
+///////
+.welcome {
+  padding: 15px;
+  margin: 0;
+  text-align: center;
+
+}
+
+.doc-pageheader {
+  padding: 2rem 15px;
+  margin-bottom: 1.5rem;
+  color: $darkgray-light;
+  text-align: left;
+  background-color: $dark;
+}
+
+.exemple {}
+.doc-title {
+  padding: 1rem 0;
+  border-bottom: 1px solid #e2e2e2;
+  font-size: 3rem;
+}
+.doc-example {
+  position: relative;
+  padding: 1.5rem;
+  margin: 1rem 0 0;
+  border: .2rem solid #f7f7f9;
+
+  .row > [class^="col-"] {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    background-color: rgba(101, 109, 120, 0.3);
+    border: 1px solid rgba(101, 109, 120, 0.35);
+  }
+  .row + .row {
+    margin-top: 1rem;
+  }
+
+  > img + img {
+    margin-left: .5rem;
+  }
+
+}

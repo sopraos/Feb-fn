@@ -23,8 +23,8 @@ Temporary Items
 .apdisk
 
 # Assets managed by Gulp
-/MySrc/
+#/MySrc/
 /node_modules/
-/Gulpfile.js
-/package.json
+#/Gulpfile.js
+#/package.json
 .idea/
