@@ -9,8 +9,8 @@
   list-style: none;
 
   //
-  li {
-    a {
+  > li {
+    > a {
       display: inline-block;
       @include hover-focus {
         text-decoration: none;
@@ -21,12 +21,12 @@
 
 // Nav Inline
 .nav-inline {
-  li {
+  > li {
     display: inline-block;
   }
 
-  li + li,
-  a + a {
+  > li + li,
+  > a + a {
     margin-left: 16px;
   }
 }

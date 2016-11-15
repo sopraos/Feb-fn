@@ -64,4 +64,15 @@
   }
 }
 
+//___ Clearfix ___
+@mixin clearfix() {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
 //** ==|====================
+@import "mixins/breakpoints";
+@import "mixins/grid-framework";
