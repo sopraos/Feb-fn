@@ -29,11 +29,37 @@ var gulp = require('gulp'),
  * gulp-jshint         | Détecte les erreurs et les problèmes potentiels dans le code
  *   jshint
  *   jshint-stylish
+ *   gulp-plumber
  * gulp-uglify         | Minifie JS
  *
  * ===== images =====
  * gulp-imagemin       | Minifie Images [.png, .jpg, .svg, etc... ]
  */
+
+
+// -----------------------------------------------------------------------------
+// Modèle de bannière à ajouter aux en-têtes de fichier
+// -----------------------------------------------------------------------------
+
+var pkg = require('./package.json'),
+    banner = {
+      full :
+        '/*!\n' +
+        ' * <%= pkg.name %> v<%= pkg.version %>: <%= pkg.description %>\n' +
+        ' * (c) ' + new Date().getFullYear() + ' <%= pkg.author %>\n' +
+        ' * <%= pkg.license %> License\n' +
+        ' * <%= pkg.repository.url %>\n' +
+        ' */\n\n',
+      min :
+        '/*!' +
+        ' <%= pkg.name %> v<%= pkg.version %>' +
+        ' | (c) ' + new Date().getFullYear() + ' <%= pkg.author %>' +
+        ' | <%= pkg.license %> License' +
+        ' | <%= pkg.repository.url %>' +
+        ' */\n'
+    };
+
+
 
 // -----------------------------------------------------------------------------
 // Clean | nettoyage
@@ -65,6 +91,9 @@ gulp.task('styles', function () {
     // Concaténation
     .pipe(plugins.concat('style.css'))
 
+    // Header Full
+    .pipe(plugins.header (banner.full, { pkg : pkg }))
+
     // Sauvegarde le tout dans ./web/css/ Sans Minification
     .pipe(gulp.dest('./web/css'))
 
@@ -76,8 +105,12 @@ gulp.task('styles', function () {
 
     // Minifie le fichier CSS
     .pipe(plugins.cleanCss({
-      compatibility: 'ie8'
+      compatibility: 'ie8',
+      keepSpecialComments : 0
     }))
+
+    // Header Min
+    .pipe(plugins.header (banner.min, { pkg : pkg }))
 
     //Source Maps
     .pipe(plugins.sourcemaps.write('.'))
@@ -102,11 +135,16 @@ gulp.task('scripts', function () {
     .pipe(plugins.sourcemaps.init())
 
     // Détecter les erreurs et les problèmes potentiels dans le code JavaScript
+    .pipe(plugins.plumber())
+
     .pipe(plugins.jshint())
     .pipe(plugins.jshint.reporter('jshint-stylish'))
 
     // Concaténation
     .pipe(plugins.concat('style.js'))
+
+    // Header Full
+    .pipe(plugins.header (banner.full, { pkg : pkg }))
 
     // Sauvegarde le tout dans ./web/js/ Sans Minification
     .pipe(gulp.dest('./web/js'))
@@ -119,6 +157,9 @@ gulp.task('scripts', function () {
 
     // Minifie le fichier JS
     .pipe(plugins.uglify())
+
+    // Header Min
+    .pipe(plugins.header (banner.min, { pkg : pkg }))
 
     //Source Maps
     .pipe(plugins.sourcemaps.write('.'))

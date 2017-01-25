@@ -1,1 +1,1 @@
-console.log("Fichier CoreJS");
+console.log("Core JS");
