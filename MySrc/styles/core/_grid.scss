@@ -7,7 +7,6 @@
 .container {
 	@include container();
 	@include container-max-widths();
-
 }
 
 // Row

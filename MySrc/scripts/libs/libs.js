@@ -1,1 +1,1 @@
-console.log("Libs 1");
+console.log('Libs 1')

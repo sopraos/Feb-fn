@@ -1,0 +1,9 @@
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "color-hex-case": null,
+    "color-hex-length": null,
+    "number-leading-zero": "never",
+    "indentation": "tab"
+  }
+}

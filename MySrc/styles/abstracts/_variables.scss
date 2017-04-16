@@ -54,12 +54,10 @@ $info:                        $aqua-dark;
 $dark: 								        #2f353b;
 $white: 							        $white;
 
-
 //
 // Paramètres <body>.
 $body-bg:     $white !default;
 $body-color:  $darkgray-dark !default;
-
 
 // Links
 //
@@ -67,8 +65,6 @@ $link-color:            $first !default;
 $link-decoration:       none !default;
 $link-hover-color:      darken($link-color, 15%) !default;
 $link-hover-decoration: underline !default;
-
-
 
 // Typographie
 //
@@ -88,7 +84,6 @@ $line-height-base:  1.5 !default;
 // 28px = 1.75rem
 // 32px = 2rem
 
-
 $font-size-h1:  32 !default;
 $font-size-h2:  28 !default;
 $font-size-h3:  24 !default;
@@ -96,12 +91,11 @@ $font-size-h4:  20 !default;
 $font-size-h5:  16 !default;
 $font-size-h6:  14 !default;
 
-$headings-margin-bottom: 0.5rem !default;
+$headings-margin-bottom: .5rem !default;
 $headings-font-family:   inherit !default;
 $headings-font-weight:   500 !default;
 $headings-line-height:   1.1 !default;
 $headings-color:         inherit !default;
-
 
 // Components
 //
@@ -110,7 +104,6 @@ $headings-color:         inherit !default;
 $border-radius: 2 !default;
 
 $border-width: 1px !default;
-
 
 // Buttons
 
@@ -133,15 +126,13 @@ $button-warning-border:       $button-warning-bg !default;
 $button-danger-border:        $button-danger-bg !default;
 $button-dark-border:          $button-dark-bg !default;
 
-
-
 // Forms
 
 $input-line-height:           1.25 !default;
 
 $form-group-margin-bottom:    16 !default;
 
-$input-height:                40 !default
+$input-height:                40 !default;
 $input-color:                 $darkgray-light !default;
 $input-bg:                    $white;
 
@@ -152,15 +143,14 @@ $cursor-disabled: not-allowed !default;
 //== Points d’arrêt de grille
 $grid-breakpoints: (
 	// Extra small screen / phone
-		s: 0,
+    s: 0,
 	// Medium screen / tablet
-		m: 768px,
+    m: 768px,
 	// Large screen / desktop
-		l: 1024px,
+    l: 1024px,
 	// Extra large screen / wide desktop
-	//xl: 1200px
+  //xl: 1200px
 ) !default;
-
 
 // Conteneurs grille
 // Définir la largeur maximale de `.container` pour différentes tailles d’écran.

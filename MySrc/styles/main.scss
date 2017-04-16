@@ -4,60 +4,60 @@
 // ==========================================================================
 
 @import
-"abstracts/variables",
-"abstracts/functions",
-"abstracts/mixins";
+	"abstracts/variables",
+	"abstracts/functions",
+	"abstracts/mixins";
 
 // VENDORS - Vendors et les feuilles de style externes
 // ==========================================================================
 
 //@import
-//"vendor/normalize";
+//"vendor/normalize"; 
 
 // BASE - Trucs de base + | Reset et dépendances
 // ==========================================================================
 
 @import
-'base/ResetCss',
-'base/base',
-"base/typography";
+	"base/ResetCss",
+	"base/base",
+	"base/typography";
 
 // CORE - CSS
 // ==========================================================================
 
 @import
-"core/grid",
-"core/nav",
-"core/buttons",
-"core/forms";
+	"core/grid",
+	"core/nav",
+	"core/buttons",
+	"core/forms";
 
 // COMPONENTS - Composants
 // ==========================================================================
 
 @import
-"components/ui-components";
+	"components/ui-components";
 
 // LAYOUT - Sections relatives à la disposition
 // ==========================================================================
 
 @import
-"layout/content";
+	"layout/content";
 
 // PAGES - Styles de page spécifique
 // ==========================================================================
 
 @import
-"pages/demo";
+	"pages/demo";
 
 // Utility classes
 // Utilitaire - Classes utilitaires
 // ==========================================================================
 
 @import
-"utilities/utilities";
+	"utilities/utilities";
 
 // THEMES - Thèmes
 // ==========================================================================
 
 @import
-"themes/default";
+	"themes/default";

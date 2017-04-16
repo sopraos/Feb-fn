@@ -1,1 +1,1 @@
-console.log("Core JS");
+console.log('Core JS')

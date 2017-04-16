@@ -1,1 +1,1 @@
-console.log("Components 1");
+console.log('Components 1')
