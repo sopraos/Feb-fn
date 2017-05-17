@@ -1,9 +1,9 @@
 // const path = require('path')
-const webpack = require('webpack')
-const config = require('./config')
-const StyleLintPlugin = require('stylelint-webpack-plugin')
-const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin')
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const webpack = require('webpack');
+const config = require('./config');
+const StyleLintPlugin = require('stylelint-webpack-plugin');
+const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const postcss = {
 	plugins: [
@@ -11,7 +11,7 @@ const postcss = {
 			browsers: config.browsers
 		})
 	]
-}
+};
 
 let base = {
 	// Points d'entrée
@@ -123,25 +123,25 @@ let base = {
 		new FriendlyErrorsWebpackPlugin()
 	]
 //
-}
+};
 
 if (config.stylelint) {
 	base.plugins.push(
 		new StyleLintPlugin({
 			files: config.stylelint
 		})
-	)
+	);
 }
 
 if (config.html) {
-	const HtmlWebpackPlugin = require('html-webpack-plugin')
+	const HtmlWebpackPlugin = require('html-webpack-plugin');
 	base.plugins.push(
 		new HtmlWebpackPlugin({
 			filename: 'index.html',
 			template: 'index.html',
 			inject: true
 		})
-	)
+	);
 }
 
-module.exports = base
+module.exports = base;

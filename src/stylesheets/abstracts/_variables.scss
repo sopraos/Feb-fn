@@ -142,21 +142,17 @@ $cursor-disabled: not-allowed !default;
 
 //== Points d’arrêt de grille
 $grid-breakpoints: (
-	// Extra small screen / phone
-    s: 0,
-	// Medium screen / tablet
-    m: 768px,
-	// Large screen / desktop
-    l: 1024px,
-	// Extra large screen / wide desktop
-  //xl: 1200px
+s: 0,// Extra small screen / phone
+m: 768px,// Medium screen / tablet
+l: 1024px,// Large screen / desktop
+//xl: 1200px // Extra large screen / wide desktop
 ) !default;
 
 // Conteneurs grille
 // Définir la largeur maximale de `.container` pour différentes tailles d’écran.
 $container-max-widths: (
-	m: 720px,
-	l: 1140px
+m: 720px,
+l: 1140px
 ) !default;
 
 // Colonnes de la grille

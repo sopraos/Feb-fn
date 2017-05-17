@@ -1,7 +1,7 @@
-const webpack = require('webpack')
+const webpack = require('webpack');
 // const ProgressBarPlugin = require('progress-bar-webpack-plugin')
-const AssetsPlugin = require('assets-webpack-plugin')
-const base = require('./base')
+const AssetsPlugin = require('assets-webpack-plugin');
+const base = require('./base');
 // const config = require('./config')
 
 base.plugins.push(
@@ -26,6 +26,6 @@ base.plugins.push(
 	new AssetsPlugin({
 		filename: './dist/' + 'assets.json'
 	})
-)
+);
 
-module.exports = base
+module.exports = base;
