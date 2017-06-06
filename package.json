@@ -2,8 +2,10 @@
   "name": "feb",
   "version": "1.0.1",
   "description": "Front end Boilerplate",
-  "main": "index.js",
-  "scripts": {},
+  "main": "gulpfile.babel.js",
+  "scripts": {
+    "build": "gulp build"
+  },
   "author": "Sopraos <sopraos@wadzaa.com>",
   "license": "ISC",
   "devDependencies": {
