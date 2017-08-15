@@ -1,14 +1,9 @@
 {
-  "root": true,
-  "parser": "babel-eslint",
-  "parserOptions": {
-    "sourceType": "module"
-  },
+	"parser": "babel-eslint",
 	"env": {
 		"browser": true,
 		"node": true
 	},
-  "plugins": [ "html" ],
 	"rules": {
 		"no-cond-assign": "error",	// disallow assignment in conditional expressions
 		"no-console": 0,	// disallow use of console (off by default in the node environment)
