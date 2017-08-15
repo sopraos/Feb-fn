@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>{{ title }}</title>
+	<link rel="stylesheet" href="stylesheets/main.css">
+	{% block head %}{% endblock %}
+</head>
+<body data-module="docs">
+
+	<header class="header-docs">
+		<div class="container">
+			<nav class="menu-docs">
+				<ul class="nav nav-inline">
+					<a href="//github.com/sopraos/Feb" target="_blank">&#10094;&#10095; Source</a>
+				</ul>
+			</nav>
+			<h1 class="header__title">Feb, front-end boilerplate and workflows</h1>
+			<div class="header__download">
+				<div class="header__git">
+					<input value="git clone https://github.com/sopraos/Feb.git" data-select>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	{% block content %}{% endblock %}
+	{% block javascript %}
+	<script src="javascripts/app.js"></script>
+	{% endblock %}
+</body>
+</html>

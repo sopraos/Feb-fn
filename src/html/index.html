@@ -1,0 +1,100 @@
+{#
+  Nunjucks Templating!
+  Homepage: https://mozilla.github.io/nunjucks/
+  Docs: https://mozilla.github.io/nunjucks/api.html
+#}
+{% extends 'layouts/application.html' %}
+
+{% block content %}
+<div class="container">
+	<div class="row">
+		<div class="col-m-12 col-m-center">
+			<div class="docs-component">
+				<div class="doc-exemple typographyExemple">
+					<h1>h1. Titre</h1>
+					<h2>h2. Titre</h2>
+					<h3>h3. Titre</h3>
+					<h4>h4. Titre</h4>
+					<h5>h5. Titre</h5>
+					<h6>h6. Titre</h6>
+				</div>
+				<div class="doc-exemple buttonExemple">
+					<h4 style="margin: 10px 0 5px;">Bouton</h4>
+					<button type="button" class="button button-default">Primary</button>
+					<button type="button" class="button button-info">Info</button>
+					<button type="button" class="button button-success">Succes</button>
+					<button type="button" class="button button-danger">Danger</button>
+					<button type="button" class="button button-warning">Warning</button>
+					<button type="button" class="button button-dark">Dark</button>
+					<h4 style="margin: 25px 0 5px;">Bouton Outline</h4>
+					<button type="button" class="button button-default-outline">Primary</button>
+					<button type="button" class="button button-info-outline">Info</button>
+					<button type="button" class="button button-success-outline">Succes</button>
+					<button type="button" class="button button-danger-outline">Danger</button>
+					<button type="button" class="button button-warning-outline">Warning</button>
+					<button type="button" class="button button-dark-outline">Dark</button>
+				</div>
+				<div class="doc-exemple formExemple">
+					<h4 style="margin: 10px 0 5px;">Form Basic</h4>
+					<form>
+						<div class="form-group">
+							<label>Name</label>
+							<input type="text" class="form-control" id="exampleInputName" placeholder="My Usename">
+						</div>
+						<div class="form-group">
+							<label>Email</label>
+							<input type="email" class="form-control" id="exampleInputEmail" placeholder="my.username@example.com">
+						</div>
+						<button type="submit" class="button button-default">Envoyer</button>
+					</form>
+					<h4 style="margin: 10px 0 5px;">Form Inline</h4>
+					<form class="form-inline">
+						<div class="form-group">
+							<label>Name</label>
+							<input type="text" class="form-control" id="exampleInputName" placeholder="My Usename">
+						</div>
+						<div class="form-group">
+							<label>Email</label>
+							<input type="email" class="form-control" id="exampleInputEmail" placeholder="my.username@example.com">
+						</div>
+						<button type="submit" class="button button-default">Envoyer</button>
+					</form>
+				</div>
+				<div class="doc-exemple menuExemple">
+					<h1 class="docs-page-title">Menu</h1>
+					<hr>
+					<h2 class="docs-heading">Menu Basic</h2>
+					<div class="docs-code"><pre><code class="html"></code></pre></div>
+					<div class="docs-code-live">
+						<ul class="nav menu-demo">
+							<li><a href="javascript:;">Un</a></li>
+							<li><a href="javascript:;">Deux</a></li>
+							<li><a href="javascript:;">Trois</a></li>
+							<li><a href="javascript:;">Quatre</a></li>
+						</ul>
+					</div>
+		
+					<h2 class="docs-heading">Menu Inline</h2>
+					<div class="docs-code"><pre><code class="html"></code></pre></div>
+					<div class="docs-code-live">
+						<ul class="nav nav-inline menu-demo">
+							<li><a href="javascript:;">Un</a></li>
+							<li><a href="javascript:;">Deux</a></li>
+							<li><a href="javascript:;">Trois</a></li>
+							<li><a href="javascript:;">Quatre</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="doc-exemple gridExemple">
+					<h1 class="docs-page-title">Systeme de grille</h1>
+					<hr>
+					<div class="row">
+						<div class="col-s-12 col-m-6 col-l-8">.col-s-12 .col-m-6 .col-l-8</div>
+						<div class="col-s-12 col-m-6 col-l-4">.col-s-12 .col-m-6 .col-l-4</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}
