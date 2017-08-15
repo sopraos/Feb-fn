@@ -1,2 +1,0 @@
-# Feb
-Front end Boilerplate
